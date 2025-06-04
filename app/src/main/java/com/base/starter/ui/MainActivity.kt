@@ -1,4 +1,4 @@
-package com.base.starter
+package com.base.starter.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
