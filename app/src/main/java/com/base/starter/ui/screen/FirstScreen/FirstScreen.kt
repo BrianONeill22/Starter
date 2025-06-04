@@ -39,7 +39,7 @@ fun FirstScreen(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceEvenly
     ) {
-        Text("Second Screen")
+        Text("First Screen")
 
         Spacer(modifier = Modifier.height(16.dp))
 
