@@ -12,10 +12,14 @@ fun AppNavigation() {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = Screen.First) {
         composable<Screen.First> {
-            FirstScreen(navController)
+            FirstScreen(onNavigateToSecond = {
+                navController.navigate(Screen.Second)
+            })
         }
         composable<Screen.Second> {
-            SecondScreen(navController)
+            SecondScreen(onBack = {
+                navController.popBackStack()
+            })
         }
         // Add other screens here
     }
